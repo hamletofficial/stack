@@ -1,23 +1,44 @@
-# The Shakespeare Support Centre
+# The Hamlet Support Centre
 
-A responsive help and support documentation site for hamlet, the commercial property listings and deal-pipeline workspace.
+The Hamlet Support Centre is the help and documentation website for **hamlet**, a workspace for a broker community working with commercial property listings and deal pipelines. It brings together practical product guidance, troubleshooting steps and frequently asked questions.
 
-## Contents
+## Repository
 
-- `support/index.html` — standalone support centre with responsive styling and client-side article search.
-- Getting started and account access guidance.
-- Deal pipeline stages: LOI Issued, Due Diligence, Under Contract and Closed.
-- Commercial property listing guidance, including responsible Passivhaus and EnerPHit credential descriptions.
-- Deal-flow reporting notes, troubleshooting guidance and FAQs.
+- **Repository:** [hamletofficial/stack](https://github.com/hamletofficial/stack)
+- **Homepage source:** `index.html`
+- **Additional support page:** `support/index.html`
+- **Package metadata:** `package.json`
+- **Official hamlet website:** https://www.hamlet-ai.co.uk/
+
+## What the support centre covers
+
+- Getting started and account access.
+- Sign-in, email verification and identity-verification troubleshooting.
+- Deal pipeline stages: **LOI Issued**, **Due Diligence**, **Under Contract** and **Closed**.
+- Critical-date and reminder guidance.
+- Commercial property listings and responsible descriptions of Passivhaus and EnerPHit credentials.
+- Deal-flow reporting, common problems and FAQs.
+- Safe guidance on what to include in a support request.
 
 ## Preview locally
 
-Open `support/index.html` in a modern browser. The page is self-contained and does not require a build step.
+Open `index.html` in a modern browser to preview the homepage. The site uses plain HTML, CSS and JavaScript and currently requires no package installation or build step. The matching support page is available at `support/index.html`.
 
-## Deployment note
+## Project structure
 
-The support centre source is committed under `/support/`. Publishing it at a public URL depends on the repository's hosting configuration. No deployment is implied by this commit.
+```text
+.
+├── index.html
+├── package.json
+├── README.md
+└── support/
+    └── index.html
+```
 
-## Official hamlet website
+## Deployment
 
-https://www.hamlet-ai.co.uk/
+The homepage and support page are committed to the repository's `main` branch. Their presence in GitHub does **not** by itself confirm that the public website is deployed. Public availability depends on the repository's hosting configuration and a successful deployment; verify the published URL before sharing it as live.
+
+## Contributing and reporting issues
+
+Please use the repository's [GitHub Issues](https://github.com/hamletofficial/stack/issues) to report documentation or website issues. Include the affected page, steps to reproduce the problem, expected and actual behaviour, and any non-sensitive error text. Do not include passwords, payment details or identity documents.
