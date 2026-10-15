@@ -1,1 +1,25 @@
-
+{
+  "name": "hamlet-shakespeare-support-centre",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The Shakespeare Support Centre: help guides, product documentation, troubleshooting and FAQs for hamlet, a commercial property listings and deal pipeline workspace.",
+  "homepage": "https://github.com/hamletofficial/stack",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hamletofficial/stack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hamletofficial/stack/issues"
+  },
+  "keywords": [
+    "hamlet",
+    "shakespeare-support-centre",
+    "help-centre",
+    "documentation",
+    "support",
+    "commercial-property",
+    "deal-pipeline",
+    "Passivhaus",
+    "EnerPHit"
+  ]
+}
