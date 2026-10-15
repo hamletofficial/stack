@@ -1,8 +1,8 @@
 {
-  "name": "hamlet-shakespeare-support-centre",
+  "name": "hamlet-support-centre",
   "version": "1.0.0",
   "private": true,
-  "description": "The Shakespeare Support Centre: help guides, product documentation, troubleshooting and FAQs for hamlet, a commercial property listings and deal pipeline workspace.",
+  "description": "The Hamlet Support Centre: help guides, product documentation, troubleshooting and FAQs for hamlet, a commercial property listings and deal pipeline workspace.",
   "homepage": "https://github.com/hamletofficial/stack",
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
   },
   "keywords": [
     "hamlet",
-    "shakespeare-support-centre",
+    "hamlet-support-centre",
     "help-centre",
     "documentation",
     "support",
