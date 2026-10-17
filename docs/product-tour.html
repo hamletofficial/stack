@@ -1,49 +1,117 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Product tour for Hamlet.">
-  <title>Hamlet Product Tour</title>
+  <meta name="theme-color" content="#071d4a">
+  <meta name="description" content="Explore how Hamlet connects sustainable commercial property listings, deal management and leasing workflows.">
+  <title>Hamlet Product Tour | From property to lease</title>
   <style>
-    :root {
-      color-scheme: dark;
-      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #0b1120;
-      color: #e5e7eb;
-    }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: 2rem;
-      box-sizing: border-box;
-    }
-    main {
-      width: min(100%, 760px);
-      padding: clamp(1.5rem, 5vw, 3rem);
-      border: 1px solid #263247;
-      border-radius: 1rem;
-      background: #111827;
-      box-sizing: border-box;
-    }
-    h1 { margin-top: 0; color: #fff; }
-    p { line-height: 1.7; color: #cbd5e1; }
-    .eyebrow {
-      color: #93c5fd;
-      font-size: .8rem;
-      font-weight: 700;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-    }
+    :root{color-scheme:dark;--bg:#0b1120;--panel:#111827;--panel2:#16233a;--navy:#071d4a;--blue:#2563eb;--mint:#8ee6ce;--text:#f4f7fb;--muted:#b6c2d4;--line:#2a3950}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:92px}
+    body{margin:0;background:radial-gradient(ellipse at 78% 0%,#142b51,transparent 42%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+    a{color:#a7c8ff}a:hover{color:#fff}
+    .top{position:sticky;top:0;z-index:5;background:var(--navy);border-bottom:1px solid #29436c}
+    .nav,.wrap,.footin{max-width:1160px;margin:auto;padding-left:24px;padding-right:24px}
+    .nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;letter-spacing:.01em}
+    .mark{width:38px;height:38px;display:grid;place-items:center;border-radius:11px;background:#15366d;border:1px solid #7194cc;font:700 24px Georgia,serif}
+    .links{display:flex;flex-wrap:wrap;gap:15px}.links a{font-size:.9rem;color:#e0eaff;text-decoration:none}
+    .hero{padding-top:70px;padding-bottom:48px}
+    .eyebrow{color:var(--mint);font-size:.78rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+    h1{max-width:850px;margin:13px 0 18px;font-size:clamp(2.5rem,6vw,4.8rem);line-height:1.03;letter-spacing:-.055em}
+    h2{font-size:clamp(1.65rem,3vw,2.15rem);line-height:1.2;letter-spacing:-.03em;margin:0 0 8px}
+    h3{font-size:1.12rem;line-height:1.35;margin:0 0 8px}
+    p{margin:0 0 12px}.lead{max-width:780px;color:var(--muted);font-size:1.13rem}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+    .button{display:inline-flex;align-items:center;justify-content:center;padding:11px 16px;border-radius:10px;background:var(--blue);color:#fff;text-decoration:none;font-weight:750}
+    .button.secondary{background:#17253d;border:1px solid #385074}
+    .section{padding-top:27px;padding-bottom:42px}
+    .section-head{margin-bottom:20px}.section-head p{color:var(--muted);max-width:760px}
+    .panel{background:linear-gradient(145deg,#16233a,var(--panel));border:1px solid var(--line);border-radius:17px;padding:22px;min-width:0}
+    .journey{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+    .step{position:relative;padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:15px}
+    .step-no{display:grid;place-items:center;width:34px;height:34px;margin-bottom:13px;border-radius:10px;background:#1b3768;color:#dbeafe;font-weight:800}
+    .step p,.module p,.panel p{color:var(--muted);font-size:.94rem}
+    .step small{display:block;margin-top:10px;color:var(--mint);font-weight:700}
+    .modules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .module{padding:20px;background:linear-gradient(145deg,#16233a,var(--panel));border:1px solid var(--line);border-radius:16px}
+    .module-head{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+    .icon{flex:0 0 40px;width:40px;height:40px;display:grid;place-items:center;border-radius:12px;background:#1b3768;color:#dbeafe;font-size:1.15rem}
+    .module .role{display:inline-block;margin-top:3px;color:var(--mint);font-size:.74rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
+    .deal-focus{border-color:#4269a7;background:linear-gradient(145deg,#173466,#111827)}
+    .pill{display:inline-block;margin:0 5px 7px 0;padding:4px 9px;border-radius:999px;background:#1b2d4a;color:#d5e4ff;font-size:.78rem}
+    .note{border-left:3px solid var(--mint);padding:14px 17px;background:#101d31;border-radius:0 12px 12px 0;color:var(--muted)}
+    .footer{margin-top:30px;background:#080e1a;border-top:1px solid var(--line)}
+    .footin{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:.87rem}
+    @media(max-width:850px){.journey{grid-template-columns:repeat(2,minmax(0,1fr))}.modules{grid-template-columns:repeat(2,minmax(0,1fr))}.nav{align-items:flex-start;flex-direction:column;padding-top:12px;padding-bottom:12px}.links{gap:11px}}
+    @media(max-width:560px){.nav,.wrap,.footin{padding-left:17px;padding-right:17px}.hero{padding-top:47px}.journey,.modules{grid-template-columns:1fr}.panel{padding:18px}.links a{font-size:.85rem}}
   </style>
 </head>
 <body>
-  <main>
-    <p class="eyebrow">Hamlet</p>
-    <h1>Product Tour</h1>
-    <p>This page is the starting point for the Hamlet product tour.</p>
+  <header class="top">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#top"><span class="mark" aria-hidden="true">H</span><span>hamlet <span style="font-weight:500;color:#c4d5f2">/ product tour</span></span></a>
+      <div class="links">
+        <a href="#journey">Deal journey</a><a href="#modules">Modules</a><a href="#sustainability">Sustainability</a>
+      </div>
+    </nav>
+  </header>
+  <main id="top">
+    <section class="hero wrap">
+      <div class="eyebrow">Less fragmentation, more connected deals</div>
+      <h1>From a sustainable property to a completed lease.</h1>
+      <p class="lead">Hamlet brings the people, property information and transaction activity around a commercial letting into one connected workspace. Start with the <strong>Deals</strong> tab: it is the working view of a potential lease, from the first expression of interest through due diligence and contract to completion.</p>
+      <div class="hero-actions"><a class="button" href="#journey">Follow the deal journey ↓</a><a class="button secondary" href="#modules">Explore every module</a></div>
+    </section>
+
+    <section class="section wrap" id="journey">
+      <div class="section-head"><h2>The Deals tab: your transaction at a glance</h2><p>Think of a deal as the connecting record. The other modules help you discover the property, coordinate the parties, maintain evidence and follow progress toward a lease.</p></div>
+      <div class="journey">
+        <article class="step"><div class="step-no">01</div><h3>Identify a property</h3><p>Review a commercial property listing, its availability and its stated sustainability credentials. Establish whether it fits the occupier’s requirements.</p><small>Related: Properties · Listings</small></article>
+        <article class="step"><div class="step-no">02</div><h3>Open and progress a deal</h3><p>Keep the opportunity in the deal pipeline and move it through the relevant stages as milestones are achieved—not simply because time has passed.</p><small>Core: Deals</small></article>
+        <article class="step"><div class="step-no">03</div><h3>Coordinate due diligence</h3><p>Keep contacts, conversations, supporting information and critical dates connected to the transaction so the parties can act on the next step.</p><small>Related: Contacts · Messages · Archive</small></article>
+        <article class="step"><div class="step-no">04</div><h3>Reach lease completion</h3><p>Track progress toward agreed lease execution, record the final position and keep deal and commission information accurate for follow-up.</p><small>Related: Dashboard · Archive</small></article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="modules">
+      <div class="section-head"><h2>What each navigation module contributes</h2><p>Viewed from Deals, each tab supports a different part of the same commercial leasing workflow.</p></div>
+      <div class="modules">
+        <article class="module deal-focus"><div class="module-head"><span class="icon">▥</span><div><h3>Deals</h3><span class="role">The transaction record</span></div></div><p>Manage opportunities as they progress through <strong>LOI Issued</strong>, <strong>Due Diligence</strong>, <strong>Under Contract</strong> and <strong>Closed</strong>. Use the deal record to keep the current stage, commercial context and next actions clear.</p><span class="pill">Pipeline stages</span><span class="pill">Critical dates</span><span class="pill">Lease progress</span></article>
+        <article class="module"><div class="module-head"><span class="icon">⌂</span><div><h3>Properties</h3><span class="role">The asset</span></div></div><p>Review the commercial property behind a deal: location, key particulars, availability and relevant building information. This is the asset context that helps parties assess suitability for a lease.</p></article>
+        <article class="module"><div class="module-head"><span class="icon">▤</span><div><h3>Listings</h3><span class="role">The market-facing offer</span></div></div><p>Publish and review property opportunities. A listing helps a potential occupier discover a suitable space and provides the starting information that can lead to a deal.</p></article>
+        <article class="module"><div class="module-head"><span class="icon">◫</span><div><h3>Dashboard</h3><span class="role">The portfolio overview</span></div></div><p>Use the wider view to understand activity across property listings and deals. Return to an individual deal when you need to check the detail behind a summary or figure.</p></article>
+        <article class="module"><div class="module-head"><span class="icon">♙</span><div><h3>Contacts</h3><span class="role">The people involved</span></div></div><p>Keep the relevant people discoverable across a transaction—such as property representatives, prospective occupiers and professional advisers—so the next action has a clear owner.</p></article>
+        <article class="module"><div class="module-head"><span class="icon">✉</span><div><h3>Messages</h3><span class="role">The conversation</span></div></div><p>Use the messaging workspace to coordinate with participants. Keep material decisions and agreed actions reflected in the deal record rather than relying on a conversation alone.</p></article>
+        <article class="module"><div class="module-head"><span class="icon">♡</span><div><h3>Social</h3><span class="role">Community activity</span></div></div><p>Stay connected to the Hamlet community and shared updates. Use relevant posts to discover conversations or connections, then move transaction-specific work into the appropriate deal workflow.</p></article>
+        <article class="module"><div class="module-head"><span class="icon">▣</span><div><h3>Archive</h3><span class="role">The record of past activity</span></div></div><p>Return to historic or completed information when you need context. Archived material can help explain a previous opportunity, decision or transaction outcome.</p></article>
+        <article class="module"><div class="module-head"><span class="icon">⚙</span><div><h3>Settings</h3><span class="role">Workspace preferences</span></div></div><p>Manage available application preferences and settings so your workspace supports the way you work. Settings complement—but do not replace—accurate deal data.</p></article>
+        <article class="module"><div class="module-head"><span class="icon">◎</span><div><h3>Edit Profile</h3><span class="role">Your professional identity</span></div></div><p>Keep your name and profile information current so collaborators can identify the right person when discussing a property, progressing a deal or arranging next steps.</p></article>
+        <article class="module"><div class="module-head"><span class="icon">£</span><div><h3>Pricing</h3><span class="role">Plan and service information</span></div></div><p>Review the available Hamlet plan or service information. Pricing relates to access to the platform; it is distinct from a property’s rent, transaction value or any commission recorded for a deal.</p></article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="sustainability">
+      <div class="section-head"><h2>Keep sustainability connected to the lease</h2><p>Sustainability is part of the property assessment, not a substitute for commercial or legal due diligence.</p></div>
+      <div class="panel">
+        <h3>What to check as a deal progresses</h3>
+        <p>For a sustainable commercial property, review the energy-efficiency information and any stated Passivhaus or EnerPHit certification alongside the occupier’s requirements. Verify claims against appropriate documentation and confirm that evidence relates to the property being offered.</p>
+        <p>As the deal moves from LOI to due diligence and contract, keep track of outstanding reviews, required documents, lease-option expiry dates and other relevant milestones. Use available reminders as prompts, while maintaining independent diary controls for contractual deadlines.</p>
+        <div><span class="pill">Property suitability</span><span class="pill">Certification evidence</span><span class="pill">Environmental review</span><span class="pill">Lease milestones</span></div>
+      </div>
+      <div class="note" style="margin-top:15px"><strong>Good practice:</strong> only describe a property as certified or compliant where that claim is supported by current, relevant evidence. Hamlet helps connect workflow information; users remain responsible for checking source documents and contractual obligations.</div>
+    </section>
+
+    <section class="section wrap">
+      <div class="panel">
+        <h2>One connected leasing workflow</h2>
+        <p>Use <strong>Deals</strong> as the operational centre of the transaction. Properties and Listings explain what is being leased; Contacts and Messages help coordinate the people and actions; the Dashboard gives a broader view; Archive preserves useful history; and your profile and settings support your day-to-day workspace.</p>
+        <p style="margin-bottom:0">The objective is simple: fewer disconnected records, clearer accountability and a more reliable path from sustainable property discovery to completed lease.</p>
+      </div>
+    </section>
   </main>
+  <footer class="footer"><div class="footin"><span>hamlet · Product tour</span><span>Less fragmentation, more connected deals.</span></div></footer>
 </body>
 </html>
