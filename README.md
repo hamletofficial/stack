@@ -1,4 +1,4 @@
-# The Hamlet Support Centre
+# Hamlet Support - Deployment Notes
 
 The Hamlet Support Centre is the help and documentation website for **hamlet**, a workspace for a broker community working with commercial property listings and deal pipelines. It brings together practical product guidance, troubleshooting steps and frequently asked questions.
 
