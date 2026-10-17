@@ -2,6 +2,19 @@
 
 The Hamlet Support Centre is the help and documentation website for **hamlet**, a workspace for a broker community working with commercial property listings and deal pipelines. It brings together practical product guidance, troubleshooting steps and frequently asked questions.
 
+## Current hamlet release
+
+- **Stable release:** `v1.04`
+- **Release date:** 16 October 2026
+- **Windows package version:** `1.4.0`
+- **Installer:** `hamlet-Setup-1.4.0.exe` (approximately 93.5 MB)
+- **Checksum file:** `SHA256SUMS.txt`, supplied alongside the installer to support integrity verification
+- **Release status:** Stable release, not a pre-release
+
+The public release label `v1.04` and Windows package version `1.4.0` refer to the same release. The Support Centre's own package version in `package.json` is tracked separately and is not the desktop application's version.
+
+For current product information and download guidance, visit the [official hamlet website](https://www.hamlet-ai.co.uk/). The [GitHub Releases page for this repository](https://github.com/hamletofficial/stack/releases) lists releases published specifically in this repository.
+
 ## Repository
 
 - **Repository:** [hamletofficial/stack](https://github.com/hamletofficial/stack)
