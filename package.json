@@ -2,7 +2,7 @@
   "name": "hamlet-support-centre",
   "version": "1.0.0",
   "private": true,
-  "description": "The Hamlet Support Centre: help guides, product documentation, troubleshooting and FAQs for hamlet, a commercial property listings and deal pipeline workspace.",
+  "description": "The Hamlet Support Centre: current help guides, product tour, account troubleshooting, commercial and residential property workflows, deal pipeline, member tools and AI-assisted features.",
   "homepage": "https://github.com/hamletofficial/stack",
   "repository": {
     "type": "git",
@@ -20,7 +20,12 @@
     "commercial-property",
     "deal-pipeline",
     "Passivhaus",
-    "EnerPHit"
+    "EnerPHit",
+    "Broker Rankings",
+    "Deal Copilot",
+    "Listings Assistant",
+    "residential-property",
+    "member-portfolio"
   ],
   "engines": {
     "node": "24.x"
