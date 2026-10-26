@@ -7,7 +7,7 @@ The Support Centre is the help and product-documentation home for **hamlet**, a 
 Hamlet's web workspace and its Windows desktop installer are versioned and released separately. Do not infer the desktop installer version from the Support Centre's own `package.json` version.
 
 - **Current stable product label:** `v1.04.02`
-- **Current Windows installer:** `hamlet-Setup-1.4.2.exe`
+- **Windows installer:** use the filename and version currently published on the official downloads page; do not rely on a hard-coded filename in this README.
 - **Release source:** [Hamlet releases and downloads](https://www.hamlet-ai.co.uk/download.html)
 - **Official product website:** [hamlet-ai.co.uk](https://www.hamlet-ai.co.uk/)
 - **Support website:** [support.hamlet-ai.co.uk](https://support.hamlet-ai.co.uk/)
